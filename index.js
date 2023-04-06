@@ -22,7 +22,7 @@ const port = process.env.PORT || 8080
 const sessionSecret = process.env.SESSION_SECRET || 'this is a secret session'
 
 //Connect to DB
-mongoose.connect(dbUrl, { useNewUrlParser: true,useUnifiedTopology: true })
+mongoose.connect(dbUrl, { useNewUrlParser: true,useUnifiedTopology: true})
 .then(()=> console.log(" DB CONNECTED!"))
 .catch((err)=> console.log(err));
 
@@ -90,7 +90,8 @@ app.get("/", (req,res)=>{
 
     res.render("index")
 })
-
+//
+//
 
 
 // Routers

@@ -18,8 +18,12 @@ const productSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "Review"
         }
-    ]
-})
+    ],
+    cart: {
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"cart",
+    },
+});
 
 
 const Product = mongoose.model("Product", productSchema);
